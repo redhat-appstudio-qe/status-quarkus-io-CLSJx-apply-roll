@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: statusquarkusio-hawk
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-rmwr-tenant/status-quarkus-io/statusquarkusio-hawk@sha256:a9c5a62ac2c26bb11e7274e7735660999fd00120126c67e1c0612c0a5633fb14
+        name: my-java-quarkus
+        resources: {}
+status: {}
